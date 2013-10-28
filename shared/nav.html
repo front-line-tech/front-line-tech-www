@@ -1,0 +1,30 @@
+<div class="masthead">
+  <!--
+  <h3 class="muted">
+    Hack the Police: make our world a safer place!
+    <a target="_blank" href="http://visibletweets.com/#query=%23bluelighthack&animation=2">#bluelighthack</a>
+  </h3>
+  -->
+  
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <!--<li><a href="team.html">About Us</a></li>-->
+          <!--<li><a href="partners.html">Partners</a></li>-->
+          <li><a href="contact.html">Enquiries</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /.navbar -->
+</div>
+
+<script>
+    // identify
+    $(function() {
+        var filename = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+        $('a[href$="' + filename + '"]').parent('li').addClass('active');
+    });
+</script>
