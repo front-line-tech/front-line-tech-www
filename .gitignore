@@ -1,2 +1,5 @@
 .DS_Store
 images/.DS_Store
+access_log
+referer_log
+agent_log
