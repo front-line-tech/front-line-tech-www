@@ -1,11 +1,28 @@
 <html>
     <head>
         <title>Front-Line Tech Xmas 2016</title>
+        <link rel="stylesheet" href="/xmas-2016/flipclock.css" />
+        <script type="text/javascript" src="/xmas-2016/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/xmas-2016/flipclock.min.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                console.log("ready!");
+
+                var today = new Date();
+                var Christmas = new Date("12-25-2016");
+                var diffMs = (Christmas - today);
+                var diffS = diffMs / 1000;
+
+                var clock = $('#countdown-clock').FlipClock(diffS, { 
+                    clockFace: 'DailyCounter',
+		            countdown: true
+                });
+            });
+        </script>
     </head>
     <body>
-
-        Coming soon...<br/>25th Dec 2016
-
+        
+        <div id="countdown-clock" style="display: inline-block;"></div>
 
 
     </body>
