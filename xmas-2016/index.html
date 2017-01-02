@@ -1,37 +1,66 @@
 <html>
     <head>
-        <title>Front-Line Tech Xmas 2016</title>
-        <link rel="stylesheet" href="/xmas-2016/flipclock.css" />
-        <script type="text/javascript" src="/xmas-2016/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="/xmas-2016/flipclock.min.js"></script>
-        <script type="text/javascript">
-            $( document ).ready(function() {
-                console.log("ready!");
-
-                var today = new Date();
-                var zeroday = new Date("01-02-2017");
-                var diffMs = (zeroday - today);
-                var diffS = diffMs / 1000;
-
-                var clock = $('#countdown-clock').FlipClock(diffS, { 
-                    clockFace: 'DailyCounter',
-		            countdown: true
-                });
-            });
-        </script>
-    </head>
-    <body style="background: black; scrollbars: none;">
+        <title>Apps | Front-Line Tech Ltd</title>
         
-        <div style="width: 100%; text-align: center;">
-            <div id="countdown-clock" style="display: inline-block; width: auto;"></div>
-        </div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+        
+        <link rel="stylesheet" href="../css/front-line-tech.css" />
+        <script src="js/front-line-tech.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="container">
+    
+          <div id="nav"></div>
 
-        <h2 style="color:azure;">
-            This gift will be ready for the new year... Please check back on 1 Jan 2017!
-        </h2>
+          <div class="row-fluid">
+              <div class="span12">
 
-        <img src="circuit.jpg" style="width: 100%; height: auto;" />
+                <div class="alert alert-info" role="alert">
+                    <b>Using our apps on iOS?</b>
+                    You'll need to trust our enterprise certificate.
+                    Just follow the steps in our simple guide: 
+                    <b><a class="alert-link" href="howto/Running-iOS-apps-from-Front-Line-Tech-Ltd.pdf" target="_blank">Running iOS apps</a></b>
+                </div>
 
+                <div class="alert alert-success" role="alert">
+                    <b>Installing our apps on Android?</b>
+                    Enable apps from sources outside the Play Store.
+                    Enable: <b>Settings &gt; Security &gt; Unknown Sources</b> 
+                </div>
+
+              </div>
+          </div>
+
+          <!-- Example row of columns -->
+          <div class="row-fluid">
+            <div class="span12">
+                <h1>Xmas 2016</h1>
+            </div>
+          </div>
+          
+          <div class="row-fluid">
+            <div class="span6">
+
+                <h3>Baubulous</h3>
+
+                <p>
+                    Download: 
+                    <a href="https://rink.hockeyapp.net/apps/21faa0c43ebb4e56a7e89f4d5b71a524#">here</a>
+                </p>
+
+            </div><!-- /span6 -->
+          </div><!-- row-fluid -->
+
+          <div id="footer"></div>
+            
+        </div> <!-- /container -->
+        
     </body>
 </html>
-    
