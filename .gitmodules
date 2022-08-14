@@ -1,6 +1,0 @@
-[submodule "xmas-2015"]
-	path = xmas-2015
-	url = https://github.com/instantiator/time-adventure-2015.git
-[submodule "time-adventure-2015"]
-	path = time-adventure-2015
-	url = https://github.com/instantiator/time-adventure-2015.git
